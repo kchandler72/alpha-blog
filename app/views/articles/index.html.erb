@@ -1,0 +1,20 @@
+<h1>Article Index</h1>
+<p>
+  <%= link_to "Create New Article", new_article_path %>
+</p>
+
+<table>
+ <tr>
+   <th>Title</th>
+   <th>Description</th>
+ </tr>   
+ 
+ <% @articles.each do |a| %>
+   <tr>
+     <td><%= a.title %></td>
+     <td><%= a.description %></td>
+     <td><%= link_to 'Edit', edit_article_path(a) %></td>
+     <td><%= link_to "View Article", article_path(a) %></td>
+   </tr>
+ <% end %>
+</table>
