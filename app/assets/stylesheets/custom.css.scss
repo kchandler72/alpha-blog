@@ -82,3 +82,12 @@ footer ul {
     list-style: none;
     padding-left: 0;
 }
+.badge {
+    background-color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.input_checkbox input {
+    width: auto !important;
+}
